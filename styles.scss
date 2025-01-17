@@ -1,0 +1,166 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f4f4f4; /* Updated background color */
+  color: #333; /* Updated default text color */
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+}
+
+/* Navigation Styles */
+.nav {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #035b5b; /* Updated navigation background color */
+  color: #fff; /* Updated navigation text color */
+}
+
+/* Content Styles */
+.content {
+  width: 65vw;
+  padding: 2rem; /* Increased padding */
+  background-color: #fff; /* Updated content background color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Added box shadow with more blur */
+}
+
+/* Start Section Styles */
+.start {
+  margin: 2rem 0 3rem;
+  text-align: center;
+  font-size: 2rem; /* Increased font size */
+  color: #3498db; /* Updated start section text color */
+  animation: fadeInUp 1s ease-out; /* Fade-in animation */
+}
+
+/* Input Place Styles */
+.input-place p {
+  color: #95a5a6; /* Updated input place text color */
+  font-size: 1.2rem; /* Adjusted font size */
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  margin: 1rem 0 2rem;
+  animation: scaleIn 1s ease-in-out; /* Scale-in animation */
+}
+
+.form button {
+  width: 8rem; /* Adjusted button width */
+  height: 100%;
+  background-color: #f39c12; /* Updated button background color */
+  color: #fff; /* Updated button text color */
+  border: none;
+  cursor: pointer; /* Added pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.form button:hover {
+  background-color: #d35400; /* Darker color on hover */
+}
+
+/* Buttons Container Styles */
+.buttons {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Forecast and N Days Styles */
+#forecast,
+#n_days {
+  margin-top: 2rem;
+  height: 2rem;
+}
+
+/* Button Styles */
+.buttons button {
+  width: 10rem; /* Adjusted button width */
+  height: 3.5rem; /* Adjusted button height */
+  border: none;
+  background-color: #2ecc71; /* Updated button background color */
+  color: #fff; /* Updated button text color */
+  margin: 1rem; /* Added margin for buttons */
+  cursor: pointer; /* Added pointer cursor */
+  transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.buttons button:hover {
+  transform: scale(1.1); /* Scale-up on hover */
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header p {
+  font-size: 3.5rem; /* Adjusted font size */
+  margin-left: 2rem; /* Adjusted margin */
+  line-height: 90%; /* Adjusted line height */
+  color: #34495e; /* Updated header text color */
+  animation: slideInLeft 1s ease-out; /* Slide-in animation from the left */
+}
+
+/* Logo Styles */
+#logo {
+  max-width: 15rem;
+  height: auto;
+  filter: grayscale(50%); /* Added grayscale filter to the logo */
+  transition: filter 0.5s ease; /* Smooth filter transition */
+}
+
+#logo:hover {
+  filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+      transform: scale(0.8);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
